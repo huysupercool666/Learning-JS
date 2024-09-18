@@ -1,5 +1,5 @@
 //Bai tu lam lai tim so nguyen to, cho mang so nguyen duong in ra mang so nguyen to.
-function checkPrimeNumber(testNumber) {
+function isPrime(testNumber) {
   if (testNumber === 2) {
     return true;
   } else if (testNumber <= 1) {
@@ -18,12 +18,12 @@ function findPrimeNumber(inputArray) {
   }
   let result = [];
   for (let i = 0; i < inputArray.length; i++) {
-    if (checkPrimeNumber(inputArray[i])) {
+    if (isPrime(inputArray[i])) {
       result.push(inputArray[i]);
     }
   }
   return result;
 }
 
-console.log(checkPrimeNumber(66));
+console.log(isPrime(66));
 console.log(findPrimeNumber([3, 2, 1, 10, 9, 77, 6, 97]));
